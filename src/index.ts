@@ -6,12 +6,14 @@ class WindMouse {
   private randomSpeed: number;
 
   constructor(mouseSpeed: number) {
-    this.mouseSpeed = mouseSpeed;
-    this.randomSeed = Math.floor(Math.random() * 10);
-    this.randomSpeed = Math.max(
-      (this.randomSeed / 2.0 + mouseSpeed) / 10.0,
-      0.1
-    );
+    Object.assign(this, {
+      mouseSpeed,
+      randomSeed: Math.floor(Math.random() * 10),
+      randomSpeed: Math.max(
+        (this.randomSeed / 2.0 + mouseSpeed) / 10.0,
+        0.1
+      ),
+    });
   }
 
   public async GeneratePoints(settings: MouseSettings): Promise<number[][]> {
