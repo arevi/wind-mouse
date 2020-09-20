@@ -119,4 +119,7 @@ class WindMouse {
   }
 }
 
-export default WindMouse;
+// CommonJS support for default export
+module.exports = WindMouse;
+module.exports.default = WindMouse;
+module.exports.__esModule = true;

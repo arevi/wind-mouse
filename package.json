@@ -25,5 +25,8 @@
   "homepage": "https://github.com/arevi/wind-mouse",
   "author": "Armin Dizdarevic",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^14.11.1"
+  }
 }
