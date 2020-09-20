@@ -1,0 +1,9 @@
+# Build paths
+build
+dist
+
+# Node Modules
+node_modules
+
+# Tests
+tests

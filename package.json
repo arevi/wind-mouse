@@ -1,0 +1,29 @@
+{
+  "name": "windmouse",
+  "version": "1.0.0",
+  "description": "A JavaScript port of the WindMouse Java library created by BenLand100. This library returns data points for human-like mouse movement.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "directory": "https://github.com/arevi/wind-mouse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arevi/wind-mouse/issues"
+  },
+  "keywords": [
+    "windmouse",
+    "humanlike",
+    "mouse movement",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "homepage": "https://github.com/arevi/wind-mouse",
+  "author": "Armin Dizdarevic",
+  "license": "MIT",
+  "dependencies": {}
+}
