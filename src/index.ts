@@ -1,4 +1,4 @@
-import { MouseSettings } from './types';
+import { MouseSettings } from './Types';
 
 class WindMouse {
   private mouseSpeed: number;
@@ -12,6 +12,8 @@ class WindMouse {
   }
 
   public async GeneratePoints(settings: MouseSettings): Promise<number[][]> {
+    if (settings.gravity < 1) settings.gravity = 1;
+
     let dist: number;
     let windX: number = Math.floor(Math.random() * 10);
     let windY: number = Math.floor(Math.random() * 10);
