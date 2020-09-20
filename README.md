@@ -44,4 +44,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 https://opensource.org/licenses/MIT
 
 ### Credits
-The originally WindMouse library was created by https://github.com/BenLand100 for Java. This is a port of said library enabling for usage with JavaScript/TypeScript.
+The original WindMouse library was created by https://github.com/BenLand100 for Java. This is a port of said library enabling for usage with JavaScript/TypeScript.
