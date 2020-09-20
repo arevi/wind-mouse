@@ -1,9 +1,5 @@
 # Build paths
-build
-dist
+lib
 
 # Node Modules
 node_modules
-
-# Tests
-tests

@@ -1,12 +1,22 @@
 {
   "name": "windmouse",
-  "version": "1.0.0",
-  "description": "A JavaScript port of the WindMouse Java library created by BenLand100. This library returns data points for human-like mouse movement.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "version": "1.0.1",
+  "description": "A JavaScript library for generating human-like mouse movement data points.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
+    "test": "jest --config jestconfig.json",
     "build": "tsc",
-    "prepare": "npm run build"
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -27,6 +37,13 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "@types/node": "^14.11.1"
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.11.1",
+    "jest": "^26.4.2",
+    "prettier": "^2.1.2",
+    "ts-jest": "^26.3.0",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.0.3"
   }
 }
