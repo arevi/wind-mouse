@@ -9,7 +9,6 @@ npm install windmouse
 ### Usage
 ```
 const WindMouse = require("windmouse");
-const fs = require("fs");
 
 // Initialize WindMouse class
 const windMouse = new WindMouse(Math.floor(Math.random() * 10));
