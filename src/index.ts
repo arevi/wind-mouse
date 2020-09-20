@@ -13,6 +13,7 @@ class WindMouse {
 
   public async GeneratePoints(settings: MouseSettings): Promise<number[][]> {
     if (settings.gravity < 1) settings.gravity = 1;
+    if (settings.maxStep === 0) settings.maxStep = 0.01;
 
     let dist: number;
     let windX: number = Math.floor(Math.random() * 10);
