@@ -16,16 +16,16 @@ const windMouse = new WindMouse(Math.floor(Math.random() * 10));
 
 // MouseSettings
 let settings = {
-  startX: Math.floor(Math.random() * 1920),
-  startY: Math.floor(Math.random() * 1080),
-  endX: Math.floor(Math.random() * 1920),
-  endY: Math.floor(Math.random() * 1080),
-  gravity: Math.floor(Math.random() * 10),
-  wind: Math.floor(Math.random() * 10),
+  startX: Math.ceil(Math.random() * 1920),
+  startY: Math.ceil(Math.random() * 1080),
+  endX: Math.ceil(Math.random() * 1920),
+  endY: Math.ceil(Math.random() * 1080),
+  gravity: Math.ceil(Math.random() * 10),
+  wind: Math.ceil(Math.random() * 10),
   minWait: 2,
-  maxWait: Math.floor(Math.random() * 5),
-  maxStep: Math.floor(Math.random() * 3),
-  targetArea: Math.floor(Math.random() * 10),
+  maxWait: Math.ceil(Math.random() * 5),
+  maxStep: Math.ceil(Math.random() * 3),
+  targetArea: Math.ceil(Math.random() * 10),
 };
 
 // Print points
