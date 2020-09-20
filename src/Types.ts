@@ -1,8 +1,3 @@
-export interface Point {
-  x: number;
-  y: number;
-}
-
 export interface MouseSettings {
   startX: number;
   startY: number;

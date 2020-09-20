@@ -1,6 +1,6 @@
 {
   "name": "windmouse",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "A JavaScript library for generating human-like mouse movement data points.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

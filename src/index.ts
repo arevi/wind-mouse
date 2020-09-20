@@ -1,4 +1,4 @@
-import { MouseSettings, Point } from './Types';
+import { MouseSettings } from './types';
 
 class WindMouse {
   private mouseSpeed: number;
